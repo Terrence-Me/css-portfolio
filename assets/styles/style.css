@@ -1,0 +1,245 @@
+:root {
+  --dark-purple: #0a040f;
+  --light-aqua: #1b959e;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #c4c4c4;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--dark-purple);
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+}
+
+header {
+  position: relative;
+}
+
+.subtitle {
+  position: absolute;
+  font-size: 20px;
+  top: 210px;
+  right: 100px;
+  font-weight: bold;
+  color: var(--light-aqua);
+  padding: 10px;
+  background-color: rgb(45, 29, 61);
+}
+
+/* header > * {
+  flex: 1 1 50%;
+} */
+
+.header-img {
+  background-color: aquamarine;
+  height: 22vh;
+  width: 100vw;
+  background-image: url(../images/bluesky.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 40px;
+  display: inline-block;
+  padding: 0 2vw;
+  color: var(--dark-purple);
+  background-color: var(--light-aqua);
+  /* width: 200px; */
+  width: auto;
+}
+
+.information {
+  text-align: right;
+}
+a {
+  color: var(--light-aqua);
+  text-decoration: underline solid var(--light-aqua) 5px;
+  padding: 10px;
+}
+
+.information li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0.7vw;
+  padding: 10px;
+}
+.information a:hover {
+  color: var(--dark-purple);
+  transition: all 400ms ease-in;
+  background-color: var(--light-aqua);
+}
+
+main {
+  margin: 40px auto;
+  justify-content: center;
+  max-width: 80vw;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+section,
+footer {
+  margin: 20px;
+  border: 2px solid red;
+  max-width: 100%;
+}
+
+.section-one,
+.section-two,
+.multiple,
+.footer {
+  display: flex;
+  height: auto;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 30px;
+  display: block;
+  height: 100%;
+  max-width: 6vw;
+  color: var(--dark-purple);
+  border: 2px solid black;
+}
+.about-me {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-left: 10px;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.verticle {
+  writing-mode: vertical-lr;
+  background-color: red;
+  width: 3px;
+  display: inline-block;
+  /* margin-left: 20px; */
+}
+
+.product-one {
+  height: 500px;
+  width: 800px;
+  background-color: blueviolet;
+  background-image: url(../images/product-one.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+  flex: 1 0 100%;
+  padding: 20px;
+}
+
+.multiple {
+  margin-top: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  height: 500px;
+  width: 800px;
+}
+
+/* .multiple > * {
+  flex: 1 1 320px;
+} */
+
+.product-two {
+  background-color: blueviolet;
+  background-image: url(../images/product-two.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 375px;
+}
+
+.product-three {
+  background-color: blueviolet;
+  background-image: url(../images/product-three.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 375px;
+}
+
+.product-four {
+  background-color: blueviolet;
+  background-image: url(../images/product-four.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 375px;
+}
+
+.product-five {
+  background-color: blueviolet;
+  background-image: url(../images/product-five.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 230px;
+  width: 375px;
+}
+
+.product-one,
+.product-two,
+.product-three,
+.product-four,
+.product-five {
+  border: 4px solid #2df7f7;
+}
+
+/* .footer {
+  margin-top: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  height: 500px;
+  width: 800px;
+} */
+
+.footer ul {
+  /* display: inline-block; */
+  /* justify-content: space-between; */
+  /* margin-top: 40px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin-left: 10px; */
+  height: 100px;
+  width: 800px;
+  /* font-size: 30px; */
+}
+
+.footer ul li {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline solid var(--light-aqua) 3px;
+  margin: 3.5vh 1.1vw;
+
+  color: var(--light-aqua);
+}
+
+/* .footer-ul {
+}
+
+span {
+  margin-right: -20px;
+  padding-left: 20px;
+} */
