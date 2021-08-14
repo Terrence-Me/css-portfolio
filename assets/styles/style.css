@@ -29,8 +29,8 @@ header {
 .subtitle {
   position: absolute;
   font-size: 2rem;
-  top: 210px;
-  right: 100px;
+  bottom: .5vh;
+  right: .8vw;
   font-weight: bold;
   color: var(--light-aqua);
   padding: 10px;
@@ -51,7 +51,6 @@ h1 {
   padding: 0 2vw;
   color: var(--dark-purple);
   background-color: var(--light-aqua);
-  /* width: auto; */
 }
 
 .information {
@@ -60,13 +59,13 @@ h1 {
 
 .information li {
   display: inline-block;
-  font-size: 16px;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0.7vw;
   padding: 10px;
 }
 
-a {
+ul a {
   color: var(--light-aqua);
   text-decoration: underline solid var(--light-aqua) 5px;
   padding: 10px;
@@ -84,25 +83,6 @@ a {
   margin: 40px auto;
   justify-content: center;
   max-width: 80vw;
-}
-
-section,
-footer {
-  /* margin: 20px; */
-  border: 2px solid red;
-  /* max-width: 100%; */
-}
-
-.section-one {
-  height: auto;
-}
-
-.section-two {
-  height: auto;
-}
-
-.footer {
-  height: auto;
 }
 
 .section-one,
@@ -123,12 +103,12 @@ h2 {
   color: var(--dark-purple);
   border-right: 4px solid var(--dark-purple);
   text-align: right;
-  /* line-height: auto; */
 }
+
 .about-me {
   font-size: 20px;
   line-height: 1.4;
-  margin-left: 10px;
+  margin: 0 auto;
   width: 60%;
   padding: 20px;
   color: var(--dark-purple);
@@ -137,26 +117,27 @@ h2 {
 .work-section {
   width: 60%;
   padding: 10px;
+  margin: 0 auto;
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .product-one {
-  height: 500px;
-  width: 800px;
-  background-color: blueviolet;
-  background-image: url(../images/product-one.jpg);
-  background-position: center;
-  background-size: cover;
-  margin-left: 10px;
-  /* flex: 1 0 100%; */
-  padding: 20px;
+  width: 100%;
 }
 
 .multiple {
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 10px;
-  height: 500px;
-  width: 800px;
+  width: 100%;
 }
 
 .product-one,
@@ -165,51 +146,105 @@ h2 {
 .product-four,
 .product-five {
   border: 4px solid #2df7f7;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.product-two {
-  background-color: blueviolet;
-  background-image: url(../images/product-two.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 230px;
-  width: 375px;
-}
-
-.product-three {
-  background-color: blueviolet;
-  background-image: url(../images/product-three.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 230px;
-  width: 375px;
-}
-
-.product-four {
-  background-color: blueviolet;
-  background-image: url(../images/product-four.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 230px;
-  width: 375px;
-}
-
+.product-two,
+.product-three,
+.product-four,
 .product-five {
   background-color: blueviolet;
-  background-image: url(../images/product-five.jpg);
-  background-position: top;
-  background-size: cover;
-  height: 230px;
-  width: 375px;
+  width: 45%;
+}
+
+.Javascript,
+.social-app,
+.responsive-display,
+.security-features,
+.photo-web {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 0.75vw;
+  color: var(--dark-purple);
+  background-color: var(--light-aqua);
+  display: block;
+  position: absolute;
+  bottom: 40px;
 }
 
 .footer-ul {
   width: 60%;
   font-size: 16px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer-ul li {
   display: inline-block;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-one,
+  .section-two,
+  .multiple,
+  .footer {
+    flex-direction: column;
+    display: inline-block;
+  }
+
+  .section-one h2,
+  .section-two h2, .footer h2 {
+    border-bottom: 4px solid var(--dark-purple);
+    border-right: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-me,
+  .work-section {
+    width: 100%;
+  }
+  .product-two,
+  .product-three,
+  .product-four,
+  .product-five {
+    width: 100%;
+  }
+
+.footer ul {
+  width: 100%;
+}
+
+@media screen and (max-width: 710px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .information li {
+    font-size: 1rem ;  
+  }
+  .header-img {
+    height: 18vh;
+  }
+
+.Javascript,
+.social-app,
+.responsive-display,
+.security-features,
+.photo-web {
+font-size: 2.5vw;
+}
+}
+
+@media screen and (max-width: 450px) {
+
+  .header {
+height: 12vh;
+  }
+
+  .information {
+    text-align: left;
+  }
 }
