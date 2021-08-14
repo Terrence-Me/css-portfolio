@@ -246,5 +246,23 @@ height: 12vh;
 
   .information {
     text-align: left;
+    
+  }
+
+  .information li {
+    margin: 0;
+  }.information li {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 319px) {
+  .information li {
+    margin: -5vw;
+  }
+  
+  ul a {
+    color: var(--light-aqua);
+    text-decoration: underline solid var(--light-aqua) 3px;
+    padding: 10px;
   }
 }
