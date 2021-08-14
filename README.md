@@ -4,4 +4,4 @@
 
 ## Screenshot
 
-![css-portfolio](./assets/images/screenshot_Portfolio.png)
+![css-portfolio](./assets/images/screenshot_Portfolio.PNG)
